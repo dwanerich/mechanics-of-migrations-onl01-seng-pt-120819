@@ -1,31 +1,18 @@
-class CreateArtists < ActiveRecord::Migration[5.2]
+class AddFavoriteFoodToArtists < ActiveRecord::Migration[5.2]
  
   def change
-    create_table :artists do |t|
-      t.string :name
-      t.string :genre
-      t.integer :age
-      t.string :hometown
-    end
+   add_column :artists, :favorite_food,
+   :string
   end
   
+
   
   
+  # def up
+  # end
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-   def up
-  end
-  
-  def down
-  end
+  # def down
+  # end
 end
 
 
